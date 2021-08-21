@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+new_file="$1.cs"
+touch "$new_file"
+
+echo "using System;" > "$new_file"
+echo "public class $1{" >> "$new_file"
+echo "	public static void Main(){" >> "$new_file"
+
+echo "		" >> "$new_file"
+
+echo "	}" >> "$new_file"
+echo "}" >> "$new_file"
+
+vim "$new_file"
