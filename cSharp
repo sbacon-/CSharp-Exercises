@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+#A SIMPLE SCRIPT TO AUTO GENERATE .CS FILES
+
 new_file="$1.cs"
 touch "$new_file"
 
